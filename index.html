@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" ></script>
+	<title>Химчистка мебели</title>
+</head>
+<body>
+
+	<header class="header">
+			<div class="container">
+				<nav class="navbar">
+					<a href="index.html" class="logo">
+						<img src="images/logo.svg" width="100" height="33" alt="logo">
+					</a>
+					<div class="hamburger toggle-button">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+					<ul class="navbar-list">
+						<li class="navbar-item"><a href="#" class="navbar-link">Услуги и цены</a></li>
+						<li class="navbar-item"><a href="#" class="navbar-link">Гарантии</a></li>
+						<li class="navbar-item"><a href="#" class="navbar-link">Отзыв</a></li>
+						<li class="navbar-item"><a href="#" class="navbar-link">Вопрос- Ответ</a></li>
+					</ul>
+					<div class="header__contact">
+						<a href="tel:0345316465" class="header__phone">(034) 53-16-465</a>
+						<ul class="header__social">
+							<li class="header__social-item">
+							</li>
+							<li class="header__social-item">
+								<a href="#" class="header__social-link">
+								    <img src="images/telegram.svg" width="9" height="9" alt="telegram">
+							    </a>
+							</li>
+							<li class="header__social-item">
+								<a href="#" class="header__social-link">
+								    <img src="images/viber.svg" width="9" height="9" alt="viber">
+							    </a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<main class="main">
+
+		<section class="intro">
+			<div class="container">
+				<div class="intro__wrapper">
+					<h1 class="intro__title">Профессиональная химчистка мягкой мебели. Киев и область</h1>
+					<p class="intro__text">Удалим старые пятна, неприятные запахи, продезинфицируем без вреда для здоровья</p>
+					<button class="btn js-open-modal" data-modal="1" type="button">Узнать стоимость чистки</button>
+					<div class="modal" data-modal="1">
+						<span class="close js-modal-close">&times;</span>
+						<h2 class="modal__title">Заказать обратный звонок</h2>
+					   <form action="/" method="POST" class="form__moda">
+							<div class="form__row">
+								<label class="form__label">
+									<span class="form__descr">Введите Ваше имя</span>
+									<input type="text" name="name" placeholder="Введите Ваше имя" class="form__input">
+								</label>
+								<label class="form__label">
+									<span class="form__descr">Ваш номер телефона</span>
+									<input type="tel" name="tel" placeholder="+38 (___) __-__-___" class="form__input">
+								</label>
+								<button class="form__btn" type="submit">помогите моему дивану</button>
+							</div>
+						</form>
+					</div>
+					<div class="overlay js-overlay-modal"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="care">
+			<div class="container">
+				<div class="section__header">
+					<h2 class="section__title">Мы искренне рады, что вы приняли решение позаботиться о благополучии своей семьи! </h2>
+					<p class="section__text">Химчистка мягкой мебели — это:</p>
+				</div>
+				<ul class="care__list">
+					<li class="care__item">
+						<h3 class="care__title">ЗДОРОВЬЕ</h3>
+						<p class="care__text">Минимизация риска развития аллергии, кожных заболеваний, проблем с дыханием (особенно у детей) и улучшение качества сна</p>
+						<div class="care__num">01</div>
+					</li>
+					<li class="care__item">
+						<h3 class="care__title">РАЦИОНАЛЬНОСТЬ</h3>
+						<p class="care__text">Увеличение срока эксплуатации мебели или напольного покрытия в разы, что экономит бюджет семьи</p>
+						<div class="care__num">02</div>
+					</li>
+					<li class="care__item">
+						<h3 class="care__title">ОПРЯТНОСТЬ</h3>
+						<p class="care__text">Придание вашему жилью аккуратности и более презентабельного вида, что позволит вам и вашим гостям чувствовать себя уютнее</p>
+						<div class="care__num">03</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="cleaning">
+			<div class="container">
+				<div class="section__header">
+					<h2 class="section__title">Чистка диванов</h2>
+				</div>
+				<ul class="cleaning__list">
+					<li class="cleaning__item">
+						<article class="cleaning__wrapper">
+							<div class="cleaning__header">
+								<img class="cleaning__img" src="images/sofa.png" width="305" height="190" alt="sofa">
+								<div class="cleaning__discount">-15%</div>
+							</div>
+							<div class="cleaning__content">
+								<h3 class="cleaning__title">
+									<a class="cleaning__link" href="#">Прямой диван</a>
+								</h3>
+								<div class="cleaning__info">
+									<div class="cleaning__num"><span>1300 руб</span>980 руб</div>
+									<button class="btn btn-cleaning js-open-modal" data-modal="2" type="button">Заказать чистку</button>
+									<div class="modal" data-modal="2">
+										<span class="close js-modal-close">&times;</span>
+										<h2 class="modal__title">Оставить заявку</h2>
+									   <form action="/" method="POST" class="form__moda">
+											<div class="form__row">
+												<label class="form__label">
+													<span class="form__descr">Введите Ваше имя</span>
+													<input type="text" name="name" placeholder="Введите Ваше имя" class="form__input">
+												</label>
+												<label class="form__label">
+													<span class="form__descr">Ваш номер телефона</span>
+													<input type="tel" name="tel" placeholder="+38 (___) __-__-___" class="form__input">
+												</label>
+												<button class="form__btn" type="submit">помогите моему дивану</button>
+											</div>
+										</form>
+									</div>
+									<div class="overlay js-overlay-modal"></div>
+								</div>
+							</div>
+						</article>
+					</li>
+					<li class="cleaning__item">
+						<article class="cleaning__wrapper">
+							<div class="cleaning__header">
+								<img class="cleaning__img" src="images/sofa.png" width="305" height="190" alt="sofa">
+							</div>
+							<div class="cleaning__content">
+								<h3 class="cleaning__title">
+									<a class="cleaning__link" href="#">Угловой диван</a>
+								</h3>
+								<div class="cleaning__info">
+									<div class="cleaning__num"><span>1100 руб</span>1180 руб</div>
+									<button class="btn btn-cleaning js-open-modal" data-modal="3" type="button">Заказать чистку</button>
+									<div class="modal" data-modal="3">
+										<span class="close js-modal-close">&times;</span>
+										<h2 class="modal__title">Оставить заявку</h2>
+									   <form action="/" method="POST" class="form__moda">
+											<div class="form__row">
+												<label class="form__label">
+													<span class="form__descr">Введите Ваше имя</span>
+													<input type="text" name="name" placeholder="Введите Ваше имя" class="form__input">
+												</label>
+												<label class="form__label">
+													<span class="form__descr">Ваш номер телефона</span>
+													<input type="tel" name="tel" placeholder="+38 (___) __-__-___" class="form__input">
+												</label>
+												<button class="form__btn" type="submit">помогите моему дивану</button>
+											</div>
+										</form>
+									</div>
+									<div class="overlay js-overlay-modal"></div>
+								</div>
+							</div>
+						</article>
+					</li>
+					<li class="cleaning__item">
+						<article class="cleaning__wrapper">
+							<div class="cleaning__header">
+								<img class="cleaning__img" src="images/sofa.png" width="305" height="190" alt="sofa">
+							</div>
+							<div class="cleaning__content">
+								<h3 class="cleaning__title">
+									<a class="cleaning__link" href="#">Диван на 2 посадочных места / кухонный уголок</a>
+								</h3>
+								<div class="cleaning__info">
+									<div class="cleaning__num"><span>1000 руб</span>800 руб</div>
+									<button class="btn btn-cleaning js-open-modal" data-modal="4" type="button">Заказать чистку</button>
+									<div class="modal" data-modal="4">
+										<span class="close js-modal-close">&times;</span>
+										<h2 class="modal__title">Оставить заявку</h2>
+									   <form action="/" method="POST" class="form__moda">
+											<div class="form__row">
+												<label class="form__label">
+													<span class="form__descr">Введите Ваше имя</span>
+													<input type="text" name="name" placeholder="Введите Ваше имя" class="form__input">
+												</label>
+												<label class="form__label">
+													<span class="form__descr">Ваш номер телефона</span>
+													<input type="tel" name="tel" placeholder="+38 (___) __-__-___" class="form__input">
+												</label>
+												<button class="form__btn" type="submit">помогите моему дивану</button>
+											</div>
+										</form>
+									</div>
+									<div class="overlay js-overlay-modal"></div>
+								</div>
+							</div>
+						</article>
+					</li>
+				</ul>
+				<div class="price">
+					<h3 class="price__title">Что входит в цену:</h3>
+					<div class="price__wrapper">
+						<ul class="price__list">
+							<li class="price__item">Чистка со всех сторон и в разложенном виде + 3 подушки</li>
+							<li class="price__item">Выведение пятен</li>
+						</ul>
+						<ul class="price__list">
+							<li class="price__item">Дезинфекция (нейтрализация запахов)</li>
+							<li class="price__item">Удаление бактерий</li>
+						</ul>
+						<ul class="price__list">
+							<li class="price__item">Дополнительная подушка + 60 грн</li>
+							<li class="price__item">Свыше 2.5 м + 300 грн\м</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="cleaning">
+			<div class="container">
+				<div class="section__header">
+					<h2 class="section__title">Чистка кресел и стульев</h2>
+				</div>
+				<ul class="cleaning__list">
+					<li class="cleaning__item">
+						<article class="cleaning__wrapper">
+							<div class="cleaning__header">
+								<img class="cleaning__img" src="images/Cafe Chair.png" width="305" height="190" alt="Cafe Chair">
+								<div class="cleaning__discount">-15%</div>
+							</div>
+							<div class="cleaning__content">
+								<h3 class="cleaning__title">
+									<a class="cleaning__link" href="#">Кресло стандартное</a>
+								</h3>
+								<div class="cleaning__info">
+									<div class="cleaning__num"><span>1300 руб</span>550 руб</div>
+									<button class="btn btn-cleaning js-open-modal" data-modal="5" type="button">Заказать чистку</button>
+									<div class="modal" data-modal="5">
+										<span class="close js-modal-close">&times;</span>
+										<h2 class="modal__title">Оставить заявку</h2>
+									   <form action="/" method="POST" class="form__moda">
+											<div class="form__row">
+												<label class="form__label">
+													<span class="form__descr">Введите Ваше имя</span>
+													<input type="text" name="name" placeholder="Введите Ваше имя" class="form__input">
+												</label>
+												<label class="form__label">
+													<span class="form__descr">Ваш номер телефона</span>
+													<input type="tel" name="tel" placeholder="+38 (___) __-__-___" class="form__input">
+												</label>
+												<button class="form__btn" type="submit">помогите моему дивану</button>
+											</div>
+										</form>
+									</div>
+									<div class="overlay js-overlay-modal"></div>
+								</div>
+							</div>
+						</article>
+					</li>
+					<li class="cleaning__item">
+						<article class="cleaning__wrapper">
+							<div class="cleaning__header">
+								<img class="cleaning__img" src="images/Cafe Chair.png" width="305" height="190" alt="Cafe Chair">
+							</div>
+							<div class="cleaning__content">
+								<h3 class="cleaning__title">
+									<a class="cleaning__link" href="#">Кресло офисное</a>
+								</h3>
+								<div class="cleaning__info">
+									<div class="cleaning__num"><span>1100 руб</span>675 руб</div>
+									<button class="btn btn-cleaning js-open-modal" data-modal="6" type="button">Заказать чистку</button>
+									<div class="modal" data-modal="6">
+										<span class="close js-modal-close">&times;</span>
+										<h2 class="modal__title">Оставить заявку</h2>
+									   <form action="/" method="POST" class="form__moda">
+											<div class="form__row">
+												<label class="form__label">
+													<span class="form__descr">Введите Ваше имя</span>
+													<input type="text" name="name" placeholder="Введите Ваше имя" class="form__input">
+												</label>
+												<label class="form__label">
+													<span class="form__descr">Ваш номер телефона</span>
+													<input type="tel" name="tel" placeholder="+38 (___) __-__-___" class="form__input">
+												</label>
+												<button class="form__btn" type="submit">помогите моему дивану</button>
+											</div>
+										</form>
+									</div>
+									<div class="overlay js-overlay-modal"></div>
+								</div>
+							</div>
+						</article>
+					</li>
+					<li class="cleaning__item">
+						<article class="cleaning__wrapper">
+							<div class="cleaning__header">
+								<img class="cleaning__img" src="images/Cafe Chair.png" width="305" height="190" alt="Cafe Chair">
+							</div>
+							<div class="cleaning__content">
+								<h3 class="cleaning__title">
+									<a class="cleaning__link" href="#">Стул стандартный</a>
+								</h3>
+								<div class="cleaning__info">
+									<div class="cleaning__num"><span>1000 руб</span>875 руб</div>
+									<button class="btn btn-cleaning js-open-modal" data-modal="7" type="button">Заказать чистку</button>
+									<div class="modal" data-modal="7">
+										<span class="close js-modal-close">&times;</span>
+										<h2 class="modal__title">Оставить заявку</h2>
+									   <form action="/" method="POST" class="form__moda">
+											<div class="form__row">
+												<label class="form__label">
+													<span class="form__descr">Введите Ваше имя</span>
+													<input type="text" name="name" placeholder="Введите Ваше имя" class="form__input">
+												</label>
+												<label class="form__label">
+													<span class="form__descr">Ваш номер телефона</span>
+													<input type="tel" name="tel" placeholder="+38 (___) __-__-___" class="form__input">
+												</label>
+												<button class="form__btn" type="submit">помогите моему дивану</button>
+											</div>
+										</form>
+									</div>
+									<div class="overlay js-overlay-modal"></div>
+								</div>
+							</div>
+						</article>
+					</li>
+				</ul>
+				<div class="price">
+					<h3 class="price__title">Что входит в цену:</h3>
+					<div class="price__wrapper">
+						<ul class="price__list">
+							<li class="price__item">Чистка со всех сторон и в разложенном виде + 3 подушки</li>
+							<li class="price__item">Выведение пятен</li>
+						</ul>
+						<ul class="price__list">
+							<li class="price__item">Дезинфекция (нейтрализация запахов)</li>
+							<li class="price__item">Удаление бактерий</li>
+						</ul>
+						<ul class="price__list">
+							<li class="price__item">Дополнительная подушка + 60 грн</li>
+							<li class="price__item">Свыше 2.5 м + 300 грн\м</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="create">
+			<div class="container">
+				<div class="section__header">
+					<h2 class="section__title">Делаем свое дело</h2>
+				</div>
+				<ul class="create__list">
+					<li class="create__item">
+						<div class="create__header">
+							<img src="images/bubbles.png" width="32" height="32" alt="bubbles">
+						</div>
+						<p class="create__text">Очищаем самые сложные загрязнения и удаляем “древние” пятна</p>
+					</li>
+					<li class="create__item">
+						<div class="create__header">
+							<img src="images/file-security.png" width="32" height="32" alt="file-security">
+						</div>
+						<p class="create__text">Используем только сертифицированную, безопасную эко-химию</p>
+					</li>
+					<li class="create__item">
+						<div class="create__header">
+							<img src="images/vaccum-cleaner.png" width="32" height="32" alt="vaccum-cleaner">
+						</div>
+						<p class="create__text">У нас работают квалифицированные клинеры, использующие профессиональное немецкое оборудование</p>
+					</li>
+					<li class="create__item">
+						<div class="create__header">
+							<img src="images/five-stars.png" width="32" height="32" alt="five-stars">
+						</div>
+						<p class="create__text">Предоставляем сервис высокого уровня, уважаем каждого клиента</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<div class="block">
+			<div class="block__content">
+				<div class="block__container">
+					<div class="block__box">
+						<h2 class="block__title">Если беремся за заказ — значит обязаны предоставить <span>безупречный результат!</span></h2>
+						<p class="block__text">Мы дорожим вашим временем и своей репутацией, поэтому гарантируем бесплатную повторную чистку дивана, если после первого нашего визитам мы что-то пропустили.</p>
+					</div>
+				</div>
+			</div>
+			<div class="block__photo">
+				<img src="images/sofa-1.png" width="670" height="362" alt="sofa">
+			</div>
+		</div>
+
+		<section class="step">
+			<div class="container">
+				<div class="section__header">
+					<h2 class="section__title">Как происходит процесс химчистки дивана</h2>
+				</div>
+				<ul class="step__list">
+					<li class="step__item">
+						<h3 class="step__num">01</h3>
+						<div class="step__title">Устанавливаем степень загрязнения и тип ткани</div>
+						<p class="step__text">Подбираем необходимые чистящие средства</p>
+					</li>
+					<li class="step__item">
+						<h3 class="step__num">02</h3>
+						<div class="step__title">Пылесосим поверхность от грубых загрязнений</div>
+						<p class="step__text">(шерсть, крошки и т.д.), глубокой вакуумной чисткой удаляем пыль и пылевых клещей</p>
+					</li>
+					<li class="step__item">
+						<h3 class="step__num">03</h3>
+						<div class="step__title">Промываем обивку в глубине дивана </div>
+						<p class="step__text">C использованием гипоаллергенных средств</p>
+					</li>
+					<li class="step__item">
+						<h3 class="step__num">04</h3>
+						<div class="step__title">Удаляем пятна разных видов</div>
+						<p class="step__text">Путем применения специальных экологичных пятновыводителей </p>
+					</li>
+					<li class="step__item">
+						<h3 class="step__num">05</h3>
+						<div class="step__title">Дезинфицируем всю поверхность дивана</div>
+						<p class="step__text">Нейтрализуем неприятные запахи</p>
+					</li>
+					<li class="step__item">
+						<h3 class="step__num">06</h3>
+						<div class="step__title">Ополаскиваем и промываем диван </div>
+						<p class="step__text">До максимальной чистоты</p>
+					</li>
+					<li class="step__item">
+						<h3 class="step__num">07</h3>
+						<div class="step__title">Вытягиваем лишнюю влагу вакуумом</div>
+						<p class="step__text">Приводим ткань в первоначальный вид</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="products">
+			<div class="container">
+				<div class="products__wrapper">
+					<div class="products__photo">
+						<div class="products__photos products__photo-1">
+							<img src="images/jar.png" width="243" height="361" alt="jar">
+						</div>
+						<div class="products__photos products__photo-2">
+							<img src="images/jar-2.png" width="198" height="254" alt="jar">
+						</div>
+					</div>
+					<div class="products__content">
+						<h2 class="products__title">Для чистки используем абсолютно безопасные <span>эко-средства</span></h2>
+						<ul class="products__list">
+							<li class="products__item">Не вызывают аллергии и раздражений у взрослых и детей</li>
+							<li class="products__item">Не вызывают аллергии и раздражений у взрослых и детей</li>
+							<li class="products__item">Имеют легкий цитрусовый аромат и выветриваются очень быстро</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="newsletter">
+			<div class="container">
+				<div class="newsletter__wrapper">
+					<div class="newsletter__content">
+						<h2 class="newsletter__title">Все еще размышляете? </h2>
+						<p class="newsletter__text">Заказывайте химчистку вашего дивана сейчас и получите чистку и дезинфекцию 2-х спальных подушек БЕСПЛАТНО!”</p>
+						<form action="/" method="POST" class="form">
+							<div class="form__row">
+								<label class="form__label">
+									<span class="form__descr">Введите Ваше имя</span>
+									<input type="text" name="name" placeholder="Введите Ваше имя" class="form__input">
+								</label>
+								<label class="form__label">
+									<span class="form__descr">Ваш номер телефона</span>
+									<input type="tel" name="tel" placeholder="+38 (___) __-__-___" class="form__input">
+								</label>
+								<button class="form__btn" type="submit">Заказать чистку</button>
+							</div>
+						</form>
+					</div>
+					<div class="newsletter__img">
+						<img src="images/pillows.png" width="477" height="468" alt="pillows">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="reviews">
+			<div class="container">
+				<div class="section__header">
+					<h2 class="section__title">Отзывы</h2>
+				</div>
+				<div class="reviews__wrapper">
+					<div class="reviews__item">
+						<img class="reviews__img" src="images/apartment.jpg" width="360" height="261" alt="apartment">
+						<div class="reviews__content">
+							<h4 class="reviews__title">Что сделали: <span>Устранили старые пятна мочи, удалили запах, продезинфицировали</span> </h4>
+						</div>
+						<div class="reviews__footer">
+							<h5 class="reviews__title">Что думает клиент Мария: <span>“Ребята справились отлично, приехали быстро, сделали работу тоже быстро) Качеством чистки ооочень довольна, диван очистили до нового состояния! Рекомендую”</span></h5>
+						</div>
+					</div>
+					<div class="reviews__item">
+						<img class="reviews__img" src="images/apartment.jpg" width="360" height="261" alt="apartment">
+						<div class="reviews__content">
+							<h4 class="reviews__title">Что сделали: <span>Устранили старые пятна мочи, удалили запах, продезинфицировали</span> </h4>
+						</div>
+						<div class="reviews__footer">
+							<h5 class="reviews__title">Что думает клиент Мария: <span>“Ребята справились отлично, приехали быстро, сделали работу тоже быстро) Качеством чистки ооочень довольна, диван очистили до нового состояния! Рекомендую”</span></h5>
+						</div>
+					</div>
+					<div class="reviews__item">
+						<img class="reviews__img" src="images/apartment.jpg" width="360" height="261" alt="apartment">
+						<div class="reviews__content">
+							<h4 class="reviews__title">Что сделали: <span>Устранили старые пятна мочи, удалили запах, продезинфицировали</span> </h4>
+						</div>
+						<div class="reviews__footer">
+							<h5 class="reviews__title">Что думает клиент Мария: <span>“Ребята справились отлично, приехали быстро, сделали работу тоже быстро) Качеством чистки ооочень довольна, диван очистили до нового состояния! Рекомендую”</span></h5>
+						</div>
+					</div>
+					<div class="reviews__item">
+						<img class="reviews__img" src="images/apartment.jpg" width="360" height="261" alt="apartment">
+						<div class="reviews__content">
+							<h4 class="reviews__title">Что сделали: <span>Устранили старые пятна мочи, удалили запах, продезинфицировали</span> </h4>
+						</div>
+						<div class="reviews__footer">
+							<h5 class="reviews__title">Что думает клиент Мария: <span>“Ребята справились отлично, приехали быстро, сделали работу тоже быстро) Качеством чистки ооочень довольна, диван очистили до нового состояния! Рекомендую”</span></h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+		<section class="question">
+			<div class="container">
+				<div class="section__header">
+					<h2 class="section__title">Вопрос-ответ</h2>
+				</div>
+				<div class="question__wrapper">
+					<button class="question__accordion"><span>01</span> Не испортится ли ткань после чистки?</button>
+	                <div class="question__text">
+		                <p>Не переживайте об этом, поверхность вашего дивана абсолютно не пострадает от воздействия препаратов. Даже наоборот, благодаря высококачественной американской и немецкой косметике ткань обретет более свежий вид, цвет станет насыщеннее.</p>
+	                </div>
+				</div>
+				<div class="question__wrapper">
+					<button class="question__accordion"><span>02</span> Не вредны ли химические препараты для людей и животных?</button>
+	                <div class="question__text">
+		                <p>Не переживайте об этом, поверхность вашего дивана абсолютно не пострадает от воздействия препаратов. Даже наоборот, благодаря высококачественной американской и немецкой косметике ткань обретет более свежий вид, цвет станет насыщеннее.</p>
+	                </div>
+				</div>
+				<div class="question__wrapper">
+					<button class="question__accordion"><span>03</span> Как долго будет сохнуть диван после чистки?</button>
+	                <div class="question__text">
+		                <p>Не переживайте об этом, поверхность вашего дивана абсолютно не пострадает от воздействия препаратов. Даже наоборот, благодаря высококачественной американской и немецкой косметике ткань обретет более свежий вид, цвет станет насыщеннее.</p>
+	                </div>
+				</div>
+			</div>
+		</section>
+
+		<div class="newsletter">
+			<div class="container">
+				<div class="newsletter__wrapper">
+					<div class="newsletter__content">
+						<h2 class="newsletter__title">Все еще размышляете? </h2>
+						<p class="newsletter__text">Наши мастера уже готовы выехать к вам:)</p>
+						<form action="/" method="POST" class="form">
+							<div class="form__row">
+								<label class="form__label">
+									<span class="form__descr">Введите Ваше имя</span>
+									<input type="text" name="name" placeholder="Введите Ваше имя" class="form__input">
+								</label>
+								<label class="form__label">
+									<span class="form__descr">Ваш номер телефона</span>
+									<input type="tel" name="tel" placeholder="+38 (___) __-__-___" class="form__input">
+								</label>
+								<button class="form__btn" type="submit">помогите моему дивану</button>
+							</div>
+						</form>
+					</div>
+					<div class="newsletter__img newsletter__img-2">
+						<img src="images/Sofa Cream.png" width="917" height="775" alt="Sofa Cream">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<a href="#" class="logo">
+						<img src="images/logo.svg" alt="logo">
+					</a>
+					<div class="footer__descr">Ваша мягкая мебель скажет нам Спасибо, пылевые клещи и клопы будут в негодовании</div>
+					<ul class="footer__list">
+						<li class="footer__item">
+							График работы офиса: 09:00 - 18:00 ежедневно
+						</li>
+						<li class="footer__item">График работы мастеров: 08:00 - 21:00</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</main>
+
+	
+	<script type="text/javascript" src="js/animation.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+
+</body>
+</html>
